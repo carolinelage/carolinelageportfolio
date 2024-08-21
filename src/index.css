@@ -6,3 +6,23 @@
 :root {
     font-family: "DM Sans", sans-serif;
 }
+/* Estilizando a barra de rolagem para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a202c; /* Cor do fundo da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4a5568; /* Cor da barra de rolagem */
+    border-radius: 6px; /* Arredondamento das bordas */
+    border: 3px solid #1a202c; /* Cor da borda */
+  }
+  
+  /* Estilizando a barra de rolagem para Firefox */
+  * {
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+    scrollbar-color: #4a5568 #1a202c; /* Cor da barra de rolagem e do fundo */
+  }
